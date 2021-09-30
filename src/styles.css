@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
 	.yandex-dzen {
 		@apply bg-gray px-5 py-5;
 	}
@@ -21,7 +20,66 @@
 			background-color: red;
 		}
 		.bg-gray {
-			background-color: #EFF4F8;
+			background-color: #eff4f8;
+		}
+		.bg-wave {
+			background-color: #31b7bc;
+		}
+		.text-wave {
+			color: #31b7bc;
+		}
+
+		.bg-theme-1 {
+			background-color: #009757;
+		}
+		.bg-theme-2 {
+			background-color: #ef7d00;
+		}
+		.bg-theme-3 {
+			background-color: #e6215a;
+		}
+		.bg-theme-4 {
+			background-color: #004f9f;
+		}
+		.bg-theme-5 {
+			background-color: #0186c1;
+		}
+		.bg-theme-6 {
+			background-color: #27ae60;
+		}
+
+		.markers-list {
+			list-style: none;
+			display: flex;
+			position: relative;
+			z-index: 2;
+			margin: 0;
+			padding: 0;
+			width: 8rem;
+			min-width: 8rem;
+			max-width: 100%;
+		}
+		.markers-list li {
+			height: 0.5rem;
+			margin: 0 1.5%;
+		}
+		.markers-list li:nth-child(1) {
+			width: 47%;
+		}
+		.markers-list li:nth-child(2) {
+			width: 19%;
+		}
+		.markers-list li:nth-child(3) {
+			width: 15%;
+		}
+		.markers-list li:nth-child(4) {
+			width: 10%;
+		}
+		.markers-list li:first-child {
+			margin-left: 0;
+		}
+		.markers-list li:last-child {
+			margin-right: 0;
 		}
 	}
 }
@@ -29,7 +87,9 @@
 	.bg-dark {
 		background-color: black;
 	}
-
+	.card-hover {
+		box-shadow: 0 2px 8px rgb(18 17 36 / 10%), 0 4px 32px rgb(18 17 36 / 20%);
+	}
 }
 
 @screen sm {
